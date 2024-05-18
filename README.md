@@ -4,7 +4,7 @@
 
 ### Download
 
-First, navigate to the unzipped directory and install required python packages with the provided `requirements.txt` file. This is explained in the following section.
+First, navigate to the unzipped directory and prepare your environment. This is explained in the following section.
 
 ### Install packages in conda environment
 
@@ -26,19 +26,19 @@ pip install hydra-core --upgrade
 ```
 
 ### Directories
-Change your data and output directory in the `definitions.py` file if desired.
+Change your data and output directory in the definitions.py file if desired.
 
 ### Train
 
 Activate the conda environment `conda activate hencler`.
 
-The configuration is done using YAML files with [hydra](https://hydra.cc/). The default configuration is in the `conf` directory. You may edit the provided default_config.yaml file or write your own YAML files.
+The configuration is done using YAML files with [hydra](https://hydra.cc/). The default configuration is in the `conf` directory. The provided default_config.yaml gives the configuration of the reported experiments. 
 
 To reproduce the reported experiments, simply choose a dataset (e.g. texas) and run the following command:
 ```R
 python run_experiment.py d_name=texas
 ```
-To change hyperparameters, create a different config file, or add arguments to your command:
+To change hyperparameters, you can create and add your own YAML files, or just add arguments to your command:
 ```R
 python run_experiment.py --config-name my_own_yaml_file
 python run_experiment.py d_name=chameleon num_cl=16 runs=1
