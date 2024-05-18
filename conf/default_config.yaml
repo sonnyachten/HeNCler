@@ -1,0 +1,17 @@
+d_name: texas #Dataset name from [texas, cornell, wisconsin, roman-empire, amazon-ratings, minesweeper, tolokers, questions]
+epochs: 300 #maximum number of iterations
+max_time: 60 #maximum training time in minutes
+hidden_dim: 256 #hidden dimension of the MLPs
+output_dim: 128 #output dimension of the MLPs
+s: infer #latent dimension: use int or 'infer' where infer = 2 * num_clusters
+num_cl: infer #number of clusters: use int or 'infer' where infer = 2 * num_classes
+gamma_node_rec: 1 #relative weight given to node reconstruction loss
+gamma_edge_rec: 1 #relative weight given to edge reconstruction loss
+lr: 1e-2 #learning rate of Adam optimizer
+lrg: 1e-2 #learning rate of CayleyAdam optimizer
+standardize: False #Preprocess node features
+to_undirected: False #Preprocess adjacency matrix to undirected
+num_runs: 10 #number of experiments to compute
+defaults:
+  - _self_
+  - hydra: custom
