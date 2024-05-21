@@ -1,6 +1,5 @@
 d_name: texas #Dataset name from [texas, cornell, wisconsin, roman-empire, amazon-ratings, minesweeper, tolokers, questions]
 epochs: 300 #maximum number of iterations
-max_time: 60 #maximum training time in minutes
 hidden_dim: 256 #hidden dimension of the MLPs
 output_dim: 128 #output dimension of the MLPs
 s: infer #latent dimension: use int or 'infer' where infer = 2 * num_clusters
