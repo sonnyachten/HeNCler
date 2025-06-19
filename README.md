@@ -1,5 +1,13 @@
 # HeNCler
 
+## Paper
+
+The published version of the paper will be available [here](#) once released.
+
+Both the paper and its appendix are available in the [paper directory](https://github.com/sonnyachten/HeNCler/tree/main/paper).
+
+Please cite our work as follows (citation coming soon).
+
 ## Code Usage
 
 ### Download
